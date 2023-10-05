@@ -1,0 +1,162 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 8rem;
+  justify-content: space-between;
+}
+.delivery-txt {
+  display: flex;
+  flex-direction: column;
+}
+.delivery-img {
+  width: 619px;
+  height: 888px;
+  background: url("../../../public/img/DeliveryListImg.png");
+}
+
+.delivery-title {
+  font-size: 40px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  width: 384px;
+  height: 104px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+ul:before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  background: black;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  height: calc(100% - 10px);
+}
+li {
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+li:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 10px;
+}
+
+.numbered-list {
+    list-style-type: none;
+    counter-reset: list-counter;
+    padding-left: 0;
+}
+
+.numbered-list li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.numbered-list li::before {
+    content: "";
+    counter-increment: list-counter;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -35px; /* text width */
+    top: 10px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    background-color: #fff;
+}
+
+.numbered-list li span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -28px; /* circle width */
+}
+
+.numbered-list li::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: -25px; /* line width */
+    top: 0;
+}
+.list-item {
+    margin-top: 30px;
+}
+.step {
+    position: relative;
+    min-height: 1em;
+    color: gray;
+  }
+  .title {
+    line-height: 1.5em;
+    font-weight: bold;
+  }
+  .caption {
+    font-size: 0.8em;
+  }
+  .step + .step {
+    margin-top: 1.5em
+  }
+  .step > div:first-child {
+    position: static;
+    height: 0;
+  }
+  .step > div:not(:first-child) {
+    margin-left: 1.5em;
+    padding-left: 1em;
+  }
+
+  /* Circle */
+.circle {
+    background: gray;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    border-radius: 100%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0 3px #fff;
+  }
+
+  .circle:after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 50%;
+    bottom: 1px;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    transform: scale(1, 2);
+    transform-origin: 50% -100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
+  .step:last-child .circle:after {
+    display: none
+  }
+

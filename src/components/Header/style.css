@@ -1,0 +1,64 @@
+.header-container {
+  padding: 2rem;
+  background-image: url("../../../public/img/LandigTopBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d9d9d9;
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-txt {
+  color: #fff;
+  font-family: Fahkwang;
+  font-size: 0.7275rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.header-txt {
+  text-align: center;
+  color: #fff;
+}
+
+.header-title {
+  font-family: Fahkwang;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.header-subtitle {
+  font-family: Roboto;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+  text-transform: lowercase;
+}
+.login-btn {
+  border-radius: 3.5625rem;
+  border: 1px solid #fff;
+  background: #fff;
+  display: inline-flex;
+  padding: 0.9375rem 2.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 99%;
+}
