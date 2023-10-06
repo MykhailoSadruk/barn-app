@@ -1,0 +1,95 @@
+.procedures-container {
+  margin-top: 6rem;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.procedure-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+}
+.procedure-title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
+
+.procedure-box-title {
+  font-size: 24px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  color: rgba(14, 14, 14, 1);
+  margin-top: 15px;
+}
+.procedure-box-descr {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: rgba(14, 14, 14, 1);
+  margin: 0 auto;
+  margin-top: -10px;
+  max-width: 215px;
+  margin-top: 15px;
+  
+}
+
+.procedures-descr-wrapper {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  height: 928px;
+  justify-content: space-between;
+  
+}
+
+.first-box {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+.third-box {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+.box {
+  flex: 1;
+}
+.procedure-subImg {
+  width: 316px;
+}
+.second-box {
+  width: 610px;
+}
+
+.procedure-btn {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  width: 131px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.procedure-txt {
+  font-size: 24px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+}
