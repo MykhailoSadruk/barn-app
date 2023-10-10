@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
-import fastIcon from "../../icons/fast 1.svg";
-import hangerIcon from "../../icons/clothes-hanger 1.svg";
-import phoneIcon from "../../icons/phone-call 1.svg";
-import enterIcon from "../../icons/enter 1.svg";
-import procedureShopImg from "../../icons/procedureShopImg.png"
-import procedureSubShopImg from "../../icons/procedureSubImg.png"
+import fastIcon from "../../../assets/fast 1.svg";
+import hangerIcon from "../../../assets/clothes-hanger 1.svg";
+import phoneIcon from "../../../assets/phone-call 1.svg";
+import enterIcon from "../../../assets/enter 1.svg";
+import procedureShopImg from "../../../assets/procedureShopImg.png"
+import procedureSubShopImg from "../../../assets/procedureSubImg.png"
 
 export default function Procedures() {
   return (
@@ -60,7 +60,9 @@ export default function Procedures() {
             moda in un'ora a Milano. Fai shopping comodamente da casa e ricevi
             gli ultimi capi di moda direttamente alla tua porta.
           </div>
-          <button className="procedure-btn">Log In &rarr;</button>
+          <button className="procedure-btn"
+           onClick={() => (window.location.href = '/login')}
+           >Log In &rarr;</button>
         </div>
       </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import Borse from "../../icons/Borse.svg";
-import Collane from "../../icons/Collane.svg";
-import Scarpe from "../../icons/Scarpe.svg";
-import Vestiti from "../../icons/Vestiti.svg";
+import Borse from "../../../assets/Borse.svg";
+import Collane from "../../../assets/Collane.svg";
+import Scarpe from "../../../assets/Scarpe.svg";
+import Vestiti from "../../../assets/Vestiti.svg";
 
 export default function Categorie() {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
-import logo from "../../icons/Logo.svg";
-import envelope from "../../icons/envelopeIcon.svg";
-import instagram from "../../icons/instagram logo.svg";
-import facebook from "../../icons/facebook logo.svg";
-import linkedin from "../../icons/linkedin logo.svg";
+import logo from "../../assets/Logo.svg";
+import envelope from "../../assets/envelopeIcon.svg";
+import instagram from "../../assets/instagram logo.svg";
+import facebook from "../../assets/facebook logo.svg";
+import linkedin from "../../assets/linkedin logo.svg";
 
 export default function Footer() {
   return (

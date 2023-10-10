@@ -1,0 +1,184 @@
+.age-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 305px;
+}
+
+.age-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.age-item {
+  font-size: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s, opacity 0.3s, font-size 0.3s;
+}
+
+.age-item.active {
+  font-size: 3rem;
+  color: rgb(17, 17, 19);
+}
+
+/*Login page */
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+}
+.left-login-block {
+  padding: 2rem;
+  background-image: url("../../public/img/Rectangle 41.png");
+  height: 982px;
+  width: 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-title {
+  font-size: 100px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.login-descr {
+  font-size: 22px;
+  font-family: "Roboto";
+  font-weight: 300;
+  max-width: 425px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login-title-box {
+  margin-top: 28vh;
+}
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 168px auto;
+}
+.form-title {
+  font-size: 60px;
+  font-family: "Fahkwang";
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  text-align: left;
+}
+.form-descr {
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 300;
+  color: rgba(27, 27, 27, 1);
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.input-field {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 341px;
+  padding: 13px 16px;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: rgba(17, 17, 19, 1);
+}
+.input-label {
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 10px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: normal;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.login-form-btn {
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 375px;
+  background-color: #000000;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 38px;
+  text-align: center;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+.login-line-box {
+  margin-top: 17px;
+  display: flex;
+  width: 375px;
+}
+.horizontal-line {
+  width: 100%;
+  color: rgb(234, 229, 229);
+}
+.horizontal-line-txt {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  padding: 0 9px;
+}
+.red-bg {
+  background-color: #d7503f;
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+}
+.google-icon {
+  margin-right: 5px;
+}
+.popup-content {
+    background-color: #FFFFFF;
+    width: 657px;
+    height: 540px;
+}
+
+  .popup-overlay  {
+    background-color: #2F2F2F78;
+  }
+  .popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-subtitle {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+ input[type=radio]:checked {
+    accent-color: black;
+ }
+ .gender-label {
+    font-weight: 400;
+    font-family: "Roboto";
+    font-size: 14px;
+ }
+ .gender-container {
+    display: flex;
+    column-gap: 24px;
+ }

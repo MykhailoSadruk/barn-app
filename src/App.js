@@ -1,22 +1,20 @@
 import './App.css';
-import Header from './components/Header/Header';
-import DeliverDescr from './components/Delivery-descr/Delivery-descr';
-import Categorie from './components/Categorie/Categorie';
-import Procedures from './components/Procedures/Procedures';
-import ChooseBoutique from './components/СhooseBoutique/ChooseBoutique';
-import Footer from './components/Footer/Footer';
-
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import StartPage from './screens/StartPage';
+import LoginPage from './screens/LoginPage';
 function App() {
-  return (
-    <div className="App">
-        <Header />
-        <DeliverDescr />
-        <Categorie />
-        <Procedures />
-        <ChooseBoutique />
-        <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+           <Router>
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        {/* <Route path="/customer-area" element={<CustomerArea />} /> */}
+        
+      </Routes>
+    </Router>
+        </div>
+    );
 }
 
 export default App;
