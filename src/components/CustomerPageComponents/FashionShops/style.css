@@ -1,0 +1,186 @@
+.fashion-shops-container {
+  margin-top: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fashion-item-wrapper {
+  margin-top: 8vh;
+  display: flex;
+  column-gap: 1rem;
+  position: relative;
+}
+.fashion-item-box {
+  display: flex;
+  flex-direction: column;
+}
+.fashion-item-txt-right {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  margin-bottom: 16vh;
+  position: absolute;
+  top: 18%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+.fashion-item-txt-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 161px;
+  align-self: flex-end;
+  margin-right: 8vw;
+  margin-top: 41px;
+}
+
+.fashion-title {
+  font-family: "Fahkwang";
+  font-weight: 500;
+  font-size: 50px;
+  margin: 0;
+}
+.txt-white {
+  color: white;
+}
+.shop-link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  text-align: right;
+  margin-top: 12px;
+}
+
+.fashion-shops-wrapper {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 8px;
+}
+
+.card-shop-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.card-shop-logo {
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-family: "Fahkwang";
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+}
+.card-link {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.bottom-shops-wrapper {
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 10vh;
+  margin-top: 1vh;
+}
+
+.fashion-item-img-right {
+  margin-top: 25vh;
+}
+
+
+@media(max-width: 1110px) {
+  .fashion-shops-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-card-shop-bg {
+    width: 340px;
+    height: auto;
+  }
+  .fashion-title {
+    font-size: 45px;
+  }
+  .shop-link {
+    font-size: 15px;
+  }
+  .fashion-item-img {
+    width: 400px;
+    height: auto;
+  }
+  .fashion-item-img-right {
+    width: 300px;
+    height: auto;
+  }
+  .fashion-item-txt-right {
+    left: 60%
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .card-title {
+    font-size: 40px;
+  }
+  .card-shop-bg {
+    width: 220px;
+    height: auto;
+  }
+  .shop-link {
+    font-size: 14px;
+  }
+  .card-link {
+    font-size: 12px;
+  }
+  .fashion-item-img {
+    width: 280px;
+    height: auto;
+  }
+  .fashion-item-img-right {
+    width: 180px;
+    height: auto;
+  }
+  .fashion-item-txt-right {
+    left: 65%
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .card-title {
+    font-size: 30px;
+  }
+  .card-shop-bg {
+    width: 175px;
+    height: auto;
+  }
+  .footer-card-shop-bg {
+    width: 175px;
+    height: auto;
+  }
+  .shop-link {
+    font-size: 12px;
+  }
+  .fashion-title {
+    font-size: 30px;
+  }
+  .fashion-item-img {
+    width: 230px;
+    height: auto;
+  }
+  .fashion-item-img-right {
+    width: 130px;
+    height: auto;
+  }
+  .fashion-item-txt-right {
+    left: 66%
+  }
+
+}

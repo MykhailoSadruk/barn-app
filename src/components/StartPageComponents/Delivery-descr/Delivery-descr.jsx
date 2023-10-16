@@ -13,7 +13,7 @@ export default function DeliverDescr() {
                     <h2 className="delivery-title">QUICK FASHION DELIVERY </h2>
                     <div className="list-container">
                         <div className="list-item">
-                            <div>
+                            <div className='marker-box'>
                                 <div className="circle">1</div>
                                 <div className="dotted-line"></div>
                             </div>
@@ -25,7 +25,7 @@ export default function DeliverDescr() {
                             </div>
                         </div>
                         <div className="list-item">
-                            <div>
+                            <div className='marker-box'>
                                 <div className="circle">2</div>
                                 <div className="dotted-line"></div>
                             </div>
@@ -40,7 +40,7 @@ export default function DeliverDescr() {
                             </div>
                         </div>
                         <div className="list-item">
-                            <div>
+                            <div  className='marker-box'>
                                 <div className="circle">3</div>
                                 <div className="dotted-line"></div>
                             </div>

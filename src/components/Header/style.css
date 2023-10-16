@@ -1,0 +1,178 @@
+.landing-header-container {
+  background-image: url("../../../public/img/LandingTopBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #d9d9d9;
+  height: 655px;
+  width: 100%;
+}
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-txt {
+  color: #fff;
+  font-family: Fahkwang;
+  font-size: 0.7275rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-left: 1rem;
+}
+
+.header-txt {
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+
+.header-title {
+  font-family: Fahkwang;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 950px;
+  text-align: center;
+  margin: 12vh auto;
+}
+
+.header-subtitle {
+  font-family: Roboto;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.5%;
+  margin-top: -10vh;
+}
+.login-btn {
+  border-radius: 3.5625rem;
+  border: 1px solid #fff;
+  background: #fff;
+  display: inline-flex;
+  padding: 0.9375rem 2.375rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  height: 46px;
+}
+.iconSvg {
+  height: 100px;
+  width: 100px;
+}
+
+.customer-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  margin-bottom: 1vh;
+}
+.user-icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .logo-txt {
+    font-size: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 4rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+  .login-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    height: 36px;
+  }
+
+  .iconSvg {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (max-width: 968px) {
+  .logo-txt {
+    font-size: 0.7rem;
+  }
+
+  .header-title {
+    font-size: 5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+  .login-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  .iconSvg {
+    height: 60px;
+    width: 60px;
+  }
+  .customer-email {
+    font-size: 12px;
+  }
+  .user-icon {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .logo-txt {
+    font-size: 0.5rem;
+  }
+
+  .header-title {
+    font-size: 2.5rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+  .login-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    height: 36px;
+  }
+
+  .iconSvg {
+    height: 40px;
+    width: 40px;
+  }
+  .customer-email {
+    font-size: 10px;
+    margin-left: 20px;
+  }
+}

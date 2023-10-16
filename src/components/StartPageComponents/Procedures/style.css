@@ -13,6 +13,7 @@
     justify-content: space-around;
     text-align: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 .procedure-title {
     text-align: center;
@@ -41,11 +42,10 @@
 }
 
 .procedures-descr-wrapper {
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     height: 928px;
-    justify-content: space-between;
 }
 
 .first-box {
@@ -95,3 +95,115 @@
     font-weight: 700;
     color: rgba(0, 0, 0, 1);
 }
+
+@media (max-width: 1200px) {
+  
+    .procedures-container {
+      margin-top: 4rem;
+      padding: 4rem;
+    }
+  
+    .procedure-title {
+      font-size: 36px;
+    }
+    .procedure-box {
+      margin: 2rem;
+
+    }
+  
+    .procedure-box-title {
+      font-size: 20px;
+    }
+  
+    .procedure-box-descr {
+      font-size: 14px;
+    }
+  
+    .procedure-txt {
+      font-size: 14px;
+     
+    }
+    .third-box {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .procedure-btn {
+      margin-top: 2rem;
+    }
+   
+  }
+  @media (max-width: 1000px) {
+    .procedure-subImg {
+        display: none;
+    }
+   
+    .procedures-descr-wrapper {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      margin-top: 1rem;
+    }
+    .procedure-txt {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .second-box {
+        height: 400px;
+        width: auto;
+    }
+    .box {
+        flex: none;
+        
+    }
+    .procedure-title {
+        margin-top: 60px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    .procedures-container {
+      margin-top: 3rem;
+      padding: 3rem;
+    }
+  
+    .procedure-title {
+      font-size: 30px;
+      margin-top: 120px;
+    }
+  
+    .procedure-box {
+      margin: 1rem;
+      text-align: center;
+    }
+  
+    .procedure-box-title {
+      font-size: 18px;
+    }
+  
+    .procedure-box-descr {
+      font-size: 12px;
+    }
+  
+    .procedures-descr-wrapper {
+      height: auto;
+    }
+  
+    .procedure-subImg,
+    .second-box {
+      width: 100%;
+      height: auto;
+    }
+  
+    .procedure-btn {
+      margin-top: 1rem;
+      max-height: 40px;
+    }
+  
+    .procedure-txt {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+  

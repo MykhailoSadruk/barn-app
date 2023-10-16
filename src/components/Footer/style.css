@@ -41,3 +41,9 @@ color: rgba(221, 221, 221, 1);
 .footer-logo {
     margin-top: 38px;
 }
+
+@media(max-width: 500px) {
+  .footer-container {
+    height: 280px;
+  }
+}
