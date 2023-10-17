@@ -4,10 +4,10 @@ import axios from "axios";
 
 const UserTable = () => {
   const [userData, setUserData] = useState([]);
-
+  const apiUrl = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get("URL")
+      .get(apiUrl+'/get-users')
       .then((response) => {
         setUserData(response.data);
       })
@@ -26,6 +26,7 @@ const UserTable = () => {
             <th>Name</th>
             <th>Age</th>
             <th>Gender</th>
+            <th>Email</th>
           </tr>
         </thead>
         <tbody className="table-items">
@@ -34,6 +35,7 @@ const UserTable = () => {
               <td>{user.name}</td>
               <td>{user.age}</td>
               <td>{user.gender}</td>
+              <td>{user.email}</td>
             </tr>
           ))}
         </tbody>

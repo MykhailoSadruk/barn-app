@@ -6,7 +6,7 @@ import FashionShops from "../../components/CustomerPageComponents/FashionShops/F
 
 export default function CustomerPage() {
   const userEmail = sessionStorage.getItem("userEmail");
-  console.log(userEmail)
+
   return (
     <>
       <Header

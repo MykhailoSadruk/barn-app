@@ -15,8 +15,9 @@ export default function LoginPage() {
   const [selectedAge, setSelectedAge] = useState(28);
   const [gender, setGender] = useState("Uomo");
   const [token, setToken] = useState("");
+  const [isNewCustomer, setIsNewCustomer] = useState(true)
 
-  const apiUrl = process.env.REACT_APP_BACKEND_URL;
+  const apiUrl = process.env.REACT_APP_BASE_URL;
 
   const navigate = useNavigate();
   let userEmail;
@@ -29,22 +30,31 @@ export default function LoginPage() {
   };
   if (token) {
     const decodedData = jwt_decode(token);
+    
   }
 
-  
   /////
+
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const tokenFromUrl = urlParams.get("token");
+    const tokenJwt = urlParams.get("token");
+    setIsNewCustomer (urlParams.get("isNewUser")); 
+    if (tokenJwt) {
+      setToken(tokenJwt);
+      const decodedData = jwt_decode(tokenJwt);
+      if (isNewCustomer) {
+        sessionStorage.setItem("userEmail", decodedData.email);
+        console.log(isNewCustomer)
+        navigate("/customer");
+      } else {
+        console.log(isNewCustomer);
+        openPopup();
 
-    if (tokenFromUrl) {
-      setToken(tokenFromUrl);
-      const decodedData = jwt_decode(tokenFromUrl);
-      openPopup();
-      
+      }
       setData(decodedData);
     }
   }, []);
+  
   /////
   const formik = useFormik({
     initialValues: {
@@ -56,6 +66,7 @@ export default function LoginPage() {
       password: Yup.string().min(4, "min length 4 characters"),
     }),
     onSubmit: async (values) => {
+      console.log(data.email, '=> formik email')
       values.age = selectedAge;
       values.gender = gender;
       closePopup();
@@ -101,19 +112,24 @@ export default function LoginPage() {
   };
 
   const handleSignInWithGoogle = async () => {
-    window.location.href = apiUrl;
+    window.location.href = apiUrl+'/auth/google';
   };
-
+// /complete-data
   const sendUserData = async (values) => {
     try {
-      const apiUrl = "http://localhost:8080/complete-data";
-      const response = await axios.post(apiUrl, values);
+      // let sendDataUrl; 
+      // if(values.password) {
+      //   console.log('send data with form')
+      // } else {
+      //    sendDataUrl = apiUrl+'/complete-data'
+      // }
+      const sendDataUrl = apiUrl+'/complete-data';
+      const response = await axios.post(sendDataUrl, values);
       console.log("server response:", response.data);
     } catch (error) {
       console.error("error sending data", error);
     }
   };
-
   console.log(data);
   console.log(gender, selectedAge);
   return (
